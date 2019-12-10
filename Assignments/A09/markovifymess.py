@@ -12,7 +12,7 @@ from couchbase.n1ql import N1QLQuery
 
 
 cluster = Cluster('couchbase://localhost')
-authenticator = PasswordAuthenticator('Admatt', 'BO120MAC')
+authenticator = PasswordAuthenticator('Admatt', '')
 cluster.authenticate(authenticator)
 cb = cluster.open_bucket('Matt_Messages')
 
